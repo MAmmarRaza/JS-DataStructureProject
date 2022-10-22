@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>InfixPostfix2</title>
+        <link rel="stylesheet" href="convert.css">
+        
+    </head>
+
+<body>
+
+<div id="form1" action="">
+        <div>
+            <h1>Infix To <span id="postfix">Postfix</span> Convertor</h1>
+            <h2>Enter the Infix expression below in box and press Convert</h2>
+            <h4>Type the Expression below without space <br>
+                format 1: 2+4/5*(5-3)^5^4 <br>
+                format 2: A+B/C*(D-A)^F^H <br>
+                (NO SPACE)</h4>
+            <label for="radPost">Infix To Postfix</label>
+            <input onclick="Postfix()"  type="radio" name="radPost" id="radPost" checked>
+            <label for="radPre">Infix To Prefix</label>
+            <input  onclick="Prefix()" type="radio" name="radPost" id="radPre" >
+        </div>
+        <label  for=""></label>
+        <input class="input" type="text" name="" id=""> <br>
+        <button class="btn" onclick="calculate()">Convert</button>
+        <h2 class="answer" id="answer">Answer: ?</h2><br>
+    </div>
+    <div id="form2">
+        <P id="p"></P>
+        
+        <table id="table1" >
+        </table>
+    </div>
+    <button id="scroll">UP</button>
+
+<script type="text/javascript" src="infixtopostfix.js"> </script>
+    
+</body>
+</html>
